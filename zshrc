@@ -66,3 +66,19 @@ export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=codeexport BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+export GOPATH=$HOME/go 
+export FLUTTER_PATH="/Users/remicarette/code/flutter/bin"
+
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin:$FLUTTER_PATH:$GCLOUD_PATH"
+
+# export PATH="$PATH:/Users/remicarette/code/flutter/bin"
+# export GCLOUD_PATH="$HOME/google-cloud-sdk/bin/gcloud"
+# export PATH="$PATH:$GCLOUD_PATH"
+# export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/remicarette/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/remicarette/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/remicarette/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/remicarette/google-cloud-sdk/completion.zsh.inc'; fi
