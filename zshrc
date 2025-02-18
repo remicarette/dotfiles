@@ -64,6 +64,7 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+<<<<<<< HEAD
 export BUNDLER_EDITOR=code
 
 # PYTHONPATH
@@ -85,11 +86,27 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export HTTP_TLS_CERTIFICATE=/Users/remicarette/.localhost-ssl/localhost.crt
 export HTTP_TLS_KEY=/Users/remicarette/.localhost-ssl/localhost.key
+=======
+export BUNDLER_EDITOR=codeexport BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+export GOPATH=$HOME/go 
+export FLUTTER_PATH="/Users/remicarette/code/flutter/bin"
+
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin:$FLUTTER_PATH:$GCLOUD_PATH"
+
+# export PATH="$PATH:/Users/remicarette/code/flutter/bin"
+# export GCLOUD_PATH="$HOME/google-cloud-sdk/bin/gcloud"
+# export PATH="$PATH:$GCLOUD_PATH"
+# export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+>>>>>>> 74dc5d26501eae4764118071372bc8f453aaf5fe
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/remicarette/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/remicarette/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/remicarette/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/remicarette/google-cloud-sdk/completion.zsh.inc'; fi
+<<<<<<< HEAD
 export GOOGLE_APPLICATION_CREDENTIALS=/Users/remicarette/.config/gcloud/application_default_credentials.json
 
 export GOPATH=$HOME/go
@@ -99,3 +116,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 function repeat-until-error() {
   eval $* && repeat-until-error $*
 }
+=======
+>>>>>>> 74dc5d26501eae4764118071372bc8f453aaf5fe
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"

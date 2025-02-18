@@ -11,7 +11,9 @@
 
 [core]
   pager = less -FRSX
-	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+	editor = code --wait
+	excludesfile = /Users/remicarette/.gitignore_global
+	editor = code --wait
 
 [alias]
   co = checkout
@@ -50,6 +52,6 @@
   mergeoptions = --no-edit
 [user]
 	email = carette.remi@gmail.com
-	name = remi carette
+	name = Remi Carette
 [pull]
 	rebase = false
