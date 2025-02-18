@@ -5,3 +5,13 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+# jupyter notebook
+alias jn='jupyter notebook'
+
+# jupyter lab
+alias jl='jupyter lab'
+
+# google_application_credentials
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/remicarette/code/remicarette/gcp/wagon-770-333108-a3237aa310ee.json
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/remicarette/code/remicarette/gcp/wagon-770-333108-b21812d1219e.json

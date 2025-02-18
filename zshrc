@@ -65,3 +65,37 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
+
+# PYTHONPATH
+
+export PYTHONPATH="/Users/remicarette/code/remicarette/data-challenges/04-Decision-Science:$PYTHONPATH"
+export PYTHONPATH="/Users/remicarette/code/tmp/lewagon-project/:$PYTHONPATH"
+
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/Contents/Home
+
+export PATH="$PATH:/Users/remicarette/code/flutter/bin"
+
+
+# android setup
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export HTTP_TLS_CERTIFICATE=/Users/remicarette/.localhost-ssl/localhost.crt
+export HTTP_TLS_KEY=/Users/remicarette/.localhost-ssl/localhost.key
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/remicarette/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/remicarette/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/remicarette/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/remicarette/google-cloud-sdk/completion.zsh.inc'; fi
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/remicarette/.config/gcloud/application_default_credentials.json
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+
+function repeat-until-error() {
+  eval $* && repeat-until-error $*
+}

@@ -38,6 +38,8 @@
   # Removes a file from the index
   unstage = reset HEAD --
 
+
+
 [help]
   autocorrect = 1
 
@@ -49,3 +51,5 @@
 [user]
 	email = carette.remi@gmail.com
 	name = remi carette
+[pull]
+	rebase = false
